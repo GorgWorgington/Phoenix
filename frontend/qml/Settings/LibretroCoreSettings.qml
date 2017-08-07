@@ -63,7 +63,7 @@ Item {
                 id: hintMouseArea;
                 anchors.fill: parent;
                 onClicked: {
-                    Qt.openUrlExternally( "file:///" + PhxPaths.qmlCoreLocation() );
+                    Qt.openUrlExternally( "file://localhost/" + PhxPaths.qmlCoreLocation() );
                 }
 
                 hoverEnabled: true;
@@ -213,6 +213,7 @@ Item {
                                         color: "#FFFFFF";
                                     }
                                     font: PhxTheme.common.systemFontFamily;
+                                    textColor: "#000000";
                                 }
 
                                 Component.onCompleted: {
